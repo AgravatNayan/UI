@@ -4,7 +4,7 @@
 <%@page import="org.json.JSONObject"%>
 <%
  JSONObject jmenu=new JSONObject();
- String username="",user_img="";
+ String us"D:/Team CRM/crmUI/crmUI"ername="",user_img="";
  try {
      GetSession.setServletRequest(request);
      GetSession.sessionValidation(response);
