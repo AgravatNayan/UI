@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>crmUI</display-name>
+  <welcome-file-list>
+    <welcome-file>Login</welcome-file>
+<!--     <welcome-file>index.htm</welcome-file> -->
+<!--     <welcome-file>index.jsp</welcome-file> -->
+<!--     <welcome-file>default.html</welcome-file> -->
+<!--     <welcome-file>default.htm</welcome-file> -->
+<!--     <welcome-file>default.jsp</welcome-file> -->
+  </welcome-file-list>
+  <servlet>
+    <description>Base class for Customer Relationship Management</description>
+    <display-name>baseCRM</display-name>
+    <servlet-name>baseCRM</servlet-name>
+    <servlet-class>baseCRM.baseCRM</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>baseCRM</servlet-name>
+    <url-pattern>/baseCRM</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Base Customer Servlet Classs</description>
+    <display-name>MainbaseCRM</display-name>
+    <servlet-name>MainbaseCRM</servlet-name>
+    <servlet-class>baseCRM.baseCRM</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MainbaseCRM</servlet-name>
+    <url-pattern>/MainbaseCRM</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>test</display-name>
+    <servlet-name>test</servlet-name>
+    <servlet-class>test.test</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>best</display-name>
+    <servlet-name>best</servlet-name>
+    <servlet-class>baseCRM.best</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>best</servlet-name>
+    <url-pattern>/best</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Login</display-name>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>baseCRM.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>getDataList</display-name>
+    <servlet-name>getDataList</servlet-name>
+    <servlet-class>baseCRM.getDataList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getDataList</servlet-name>
+    <url-pattern>/getDataList</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>emp_mst</display-name>
+    <servlet-name>emp_mst</servlet-name>
+    <servlet-class>baseCRM.emp_mst</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>emp_mst</servlet-name>
+    <url-pattern>/emp_mst</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>user_mst</display-name>
+    <servlet-name>user_mst</servlet-name>
+    <servlet-class>baseCRM.user_mst</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>user_mst</servlet-name>
+    <url-pattern>/user_mst</url-pattern>
+  </servlet-mapping>
+</web-app>
